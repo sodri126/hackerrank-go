@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"hackerrank/helper"
+	"hackerrank-go/helper"
 	"os"
 	"strconv"
 	"strings"

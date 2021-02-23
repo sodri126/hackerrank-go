@@ -3,6 +3,7 @@ package helper
 import (
 	"bufio"
 	"io"
+	"log"
 	"strings"
 )
 
@@ -18,5 +19,11 @@ func ReadLine(reader *bufio.Reader) string {
 func CheckError(err error) {
 	if err != nil {
 		panic(err)
+	}
+}
+
+func IsError(err error) {
+	if err != nil {
+		log.Fatalln(err)
 	}
 }
